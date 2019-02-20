@@ -6,15 +6,7 @@ module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: './src/main.js',
   output: {
-    path: config.build.assetsRoot,
+    path: config.build.assetsRoot, // assetsRoot: path.resolve(__dirname, '../dist/staticCode')
     filename: '[name].js'
-  },
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      }
-    ]
   }
 }
